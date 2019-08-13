@@ -6,21 +6,20 @@ import org.apache.jmeter.samplers.SampleResult;
 import org.apache.jmeter.visualizers.backend.AbstractBackendListenerClient;
 import org.apache.jmeter.visualizers.backend.BackendListenerContext;
 
-import java.net.InetAddress;
-import java.sql.Time;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TimerTask;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class HTTPBackendListenerClient extends AbstractBackendListenerClient {
     
     private long time = System.currentTimeMillis();
     private ArrayList<Object>dataObjectList = new ArrayList<Object>();
+
+    @Override
+    public void setupTest(BackendListenerContext context) throws Exception {
+
+    }
 
     @Override
     public Arguments getDefaultParameters() {
