@@ -11,6 +11,11 @@ import java.io.BufferedReader;
 import com.google.gson.Gson;
 import java.util.zip.GZIPOutputStream;
 
+/**
+ * Class to handle HTTP request
+ * support GET, POST
+ * supports content-type: application/json
+ */
 class Fetch {
 
     private String enableCompression = "false";
@@ -19,6 +24,13 @@ class Fetch {
         this.enableCompression = enableCompression;
     }
 
+    /**
+     * Make a POST request to the endpoint provided
+     * expects data object to of type HashMap
+     * @param url
+     * @param data
+     * @return String
+     */
     String post(String url, Map<String, Object> data) {
         try {
             URL apiURL = new URL(url);
@@ -63,6 +75,13 @@ class Fetch {
         return "{}";
     }
 
+    /**
+     * Make a POST request to the endpoint provided
+     * expects data object to of type ArrayList
+     * @param url
+     * @param data
+     * @return String
+     */
     String post(String url, ArrayList data) {
         try {
             URL apiURL = new URL(url);
@@ -106,6 +125,12 @@ class Fetch {
         return "{}";
     }
 
+    /**
+     * Make a get request to the specified URL
+     * supports content-type: application/json
+     * @param url
+     * @return HashMap
+     */
     Map get(String url) {
         try {
             URL apiURL = new URL(url);

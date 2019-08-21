@@ -16,11 +16,13 @@ public class HTTPBackendListenerClient extends AbstractBackendListenerClient {
     private long time = System.currentTimeMillis();
     private ArrayList<Object>dataObjectList = new ArrayList<Object>();
 
+    // TODO: Add support for external config API
     @Override
     public void setupTest(BackendListenerContext context) throws Exception {
 
     }
 
+    // add the default parameters
     @Override
     public Arguments getDefaultParameters() {
         Arguments arguments = new Arguments();
