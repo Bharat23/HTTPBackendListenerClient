@@ -20,7 +20,7 @@
 
 ## Installation
 
-* Copy the JAR file (BackendListener & GSON) in the JMeter folder under `/ext/lib`
+* Copy the JAR file (BackendListener & GSON) in the JMeter folder under `/lib/ext`
 * The Jar should now be visible under the drop down available when you add a BackendListener in your project.
 
 
