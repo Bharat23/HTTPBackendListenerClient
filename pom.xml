@@ -6,11 +6,41 @@
   <packaging>jar</packaging>
   <version>1.0.0</version>
   <name>HTTPBackendListener</name>
-  <url>http://maven.apache.org</url>
+  <description>Generic Backend Listener for sending SampleResult data to any POST endpoint</description>
+  <url>https://github.com/Bharat23/HTTPBackendListenerClient</url>
+  <organization>
+      <name>com.github.bharat23</name>
+      <url>https://github.com/Bharat23</url>
+  </organization>
+  <issueManagement>
+      <system>GitHub</system>
+      <url>https://github.com/Bharat23/HTTPBackendListenerClient/issues</url>
+  </issueManagement>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  <licenses>
+      <license>
+          <name>MIT</name>
+          <url>https://github.com/Bharat23/HTTPBackendListenerClient/blob/master/LICENSE.MD</url>
+          <distribution>repo</distribution>
+      </license>
+  </licenses>
+  <scm>
+      <url>https://github.com/Bharat23/HTTPBackendListenerClient</url>
+      <connection>
+          scm:git:git://github.com/Bharat23/HTTPBackendListenerClient.git
+      </connection>
+      <developerConnection>
+          scm:git:ssh://git@github.com:Bharat23/HTTPBackendListenerClient.git
+      </developerConnection>
+  </scm>
+  <developers>
+      <developer>
+          <name>Bharat Sinha</name>
+      </developer>
+  </developers>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
