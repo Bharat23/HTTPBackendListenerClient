@@ -3,6 +3,7 @@
 ## Content
 
 - [Features](#features)
+- [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Contribution](#contribution)
@@ -13,9 +14,13 @@
 * Handle POST endpoints
 * Supports GZip compression
 
+## Dependencies
+
+* GSON - 2.8.5 ([Link](https://mvnrepository.com/artifact/com.google.code.gson/gson "GSON"))
+
 ## Installation
 
-* Copy the JAR file in the JMeter folder under `/ext/lib`
+* Copy the JAR file (BackendListener & GSON) in the JMeter folder under `/ext/lib`
 * The Jar should now be visible under the drop down available when you add a BackendListener in your project.
 
 
