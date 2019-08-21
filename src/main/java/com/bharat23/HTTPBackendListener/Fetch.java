@@ -58,7 +58,7 @@ class Fetch {
             return response.toString();
         }
         catch (Exception ex) {
-            System.out.println(ex);
+            ex.printStackTrace();
         }
         return "{}";
     }
@@ -75,7 +75,6 @@ class Fetch {
                 GZIPOutputStream wr = new GZIPOutputStream(con.getOutputStream());
                 Gson gsonObj = new Gson();
                 String jsonStr = gsonObj.toJson(data);
-                System.out.println("NOW");
                 System.out.println(jsonStr);
                 wr.write(jsonStr.getBytes());
                 wr.flush();
@@ -98,12 +97,11 @@ class Fetch {
             }
             in.close();
             //print result
-            System.out.println(response.toString());
             con.disconnect();
             return response.toString();
         }
         catch (Exception ex) {
-            System.out.println(ex);
+            ex.printStackTrace();
         }
         return "{}";
     }
@@ -122,7 +120,6 @@ class Fetch {
             }
             in.close();
             //print result
-            System.out.println(response.toString());
             con.disconnect();
             Gson gsonObj = new Gson();
             Map map = gsonObj.fromJson(response.toString(), Map.class);
