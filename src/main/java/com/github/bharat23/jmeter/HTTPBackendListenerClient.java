@@ -1,4 +1,4 @@
-package com.bharat23.HTTPBackendListener;
+package com.github.bharat23.jmeter;
 
 import org.apache.jmeter.assertions.AssertionResult;
 import org.apache.jmeter.config.Arguments;

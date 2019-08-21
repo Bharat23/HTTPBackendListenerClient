@@ -1,4 +1,4 @@
-package com.bharat23.HTTPBackendListener;
+package com.github.bharat23.jmeter;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
