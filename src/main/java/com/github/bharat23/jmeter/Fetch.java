@@ -47,7 +47,7 @@ class Fetch {
                 wr.flush();
                 wr.close();
             } else {
-                con.setRequestProperty("Content-Encoding", "utf-8");
+                con.setRequestProperty("Content-Encoding", "deflate");
                 DataOutputStream wr = new DataOutputStream(con.getOutputStream());
                 Gson gsonObj = new Gson();
                 String jsonStr = gsonObj.toJson(data);
@@ -99,7 +99,7 @@ class Fetch {
                 wr.flush();
                 wr.close();
             } else {
-                con.setRequestProperty("Content-Encoding", "utf-8");
+                con.setRequestProperty("Content-Encoding", "deflate");
                 DataOutputStream wr = new DataOutputStream(con.getOutputStream());
                 Gson gsonObj = new Gson();
                 String jsonStr = gsonObj.toJson(data);

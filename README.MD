@@ -3,6 +3,7 @@
 ## Content
 
 - [Features](#features)
+    - [Response](#response)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -13,6 +14,36 @@
 * Plug-n-Play, easy to use module
 * Handle POST endpoints
 * Supports GZip compression
+
+    ### Response
+
+    - A sample response Object looks something like this.
+    - The BackendListener will send an array of such objects.
+    ```
+    { 
+        ResponseCode: '200',
+        ContentType: 'text/html; charset=utf-8',
+        EndTime: 1566502823484,
+        IdleTime: 0,
+        StartTime: 1566502823292,
+        ResponseMessage: 'OK',
+        ErrorCount: 0,
+        Assertions: [],
+        Success: true,
+        URL: 'https://github.com/',
+        Latency: 151,
+        Bytes: 90265,
+        AllThreads: 1,
+        BodySize: 87922,
+        ThreadName: 'Thread Group 1-2',
+        DataType: 'text',
+        ResponseTime: 192,
+        SampleCount: 1,
+        ConnectTime: 58,
+        SampleLabel: 'HTTP Request',
+        timestamp: 1566502823292 
+    }
+    ```
 
 ## Dependencies
 
