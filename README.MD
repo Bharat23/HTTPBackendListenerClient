@@ -1,6 +1,7 @@
 # HTTPBackendListenerClient (JMeter)
 
 ![Sonatype Nexus (Repository)](https://img.shields.io/nexus/staging/com.github.bharat23.jmeter/HTTPBackendListener?server=https%3A%2F%2Frepository.jboss.org%2Fnexus)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Content
 
