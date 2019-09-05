@@ -22,7 +22,7 @@
 
     - A sample response Object looks something like this.
     - The BackendListener will send an array of such objects.
-    ```
+    ```javascript
     { 
         ResponseCode: '200',
         ContentType: 'text/html; charset=utf-8',
